@@ -18,6 +18,15 @@ body{
     url('img/fondo.png') center/cover no-repeat fixed;
 }
 
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background: url("img/fondo.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: #ffffff;
+}
+
+
 /* Utilidades */
 .fw-extrabold{font-weight:800}
 .ls-wide{letter-spacing:.12em}
