@@ -1,0 +1,144 @@
+/* ===== Base ===== */
+:root{
+  --txt:#eef2f6;
+  --muted:#b7c0cc;
+  --brand:#2bd4a3;
+  --brand-600:#20b488;
+  --stroke: rgba(255,255,255,.12);
+  --shadow: 0 12px 28px rgba(0,0,0,.35);
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  color:#e9eef5;
+  font-family:Poppins, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, "Helvetica Neue", Arial;
+  background:
+    linear-gradient(180deg, rgba(11,15,22,.86), rgba(11,15,22,.86)),
+    url('img/fondo.png') center/cover no-repeat fixed;
+}
+
+/* Utilidades */
+.fw-extrabold{font-weight:800}
+.ls-wide{letter-spacing:.12em}
+.text-brand{color:#8be9c7}
+.lead{color:#b8c4d4}
+
+/* Nav glass */
+.backdrop-blur{backdrop-filter: blur(8px);}
+
+/* Hero */
+.brand-underline{
+  text-decoration: underline;
+  text-decoration-thickness:.22em;
+  text-underline-offset:.18em;
+  text-decoration-color: rgba(43,212,163,.45);
+  color:#b9f4e2;
+}
+.hero-illustration img{
+  width:100%;
+  height:auto;            /* mantiene proporción */
+  object-fit:contain;
+  border-radius:20px;
+  box-shadow: var(--shadow);
+  background:#0f172a;
+}
+.chip{
+  border:1px solid var(--stroke);
+  background:rgba(255,255,255,.05);
+  color:#d8e1ea;
+  padding:6px 12px;
+  border-radius:999px;
+  font-size:.85rem;
+}
+
+/* Cards de vidrio (servicios/planes/faq) */
+.glass, .card.glass{
+  background: rgba(255,255,255,.06) !important;
+  border: 1px solid var(--stroke) !important;
+  color:#eef3f9;
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(6px);
+}
+
+/* Iconos de servicios */
+.icon-round{
+  width:56px;height:56px;border-radius:50%;
+  display:grid;place-items:center;
+  color:#0f1b16;
+  background: linear-gradient(140deg, var(--brand), var(--brand-600));
+  box-shadow: 0 10px 22px rgba(32,180,136,.28);
+}
+
+/* Precio grande en planes */
+.display-price{ margin:.25rem 0 .6rem; }
+.display-price span{
+  font-weight:800;
+  font-size: clamp(1.6rem, 2.2vw, 2rem);
+  color: var(--brand);
+}
+
+/* Destacado */
+.featured{ position:relative; }
+.badge-popular{
+  position:absolute; top:12px; right:12px;
+  background: var(--brand);
+  color:#03120d; font-weight:800;
+  padding:6px 10px; border-radius:999px; font-size:.8rem;
+}
+
+/* Botones */
+.btn-brand{
+  background: var(--brand) !important;
+  border-color: transparent !important;
+  color: #ffffff !important;     /* texto blanco fijo */
+  box-shadow: 0 15px 30px rgba(32,180,136,.25);
+}
+.btn-brand:hover{
+  background: var(--brand-600) !important;
+  color:#ffffff !important;
+}
+.btn-outline-light{
+  color:#e9eef5 !important;
+  border-color: rgba(255,255,255,.35) !important;
+}
+.btn-outline-light:hover{ background:rgba(255,255,255,.1) !important; }
+
+/* Listas y textos en tarjetas legibles */
+.card.glass .text-muted, .glass .text-muted{ color:#a8b3c2 !important; }
+.card.glass .text-body{ color:#e9eef5 !important; }
+ul.list-unstyled li{ color:#dfe7f1; }
+
+/* WhatsApp flotante */
+/* BOTÓN WHATSAPP FLOTANTE */
+.whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+  z-index: 999;
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+
+.whatsapp-float img {
+  width: 35px;
+  height: 35px;
+}
+
+
+/* Ajustes responsive */
+@media (max-width: 991.98px){
+  header .display-5{font-size: 2rem;}
+}

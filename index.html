@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>JoserWeb – Páginas web que venden</title>
+  <meta name="description" content="Diseñamos páginas web modernas, rápidas y enfocadas a vender. Tiendas en línea, catálogos y landing pages para tu negocio." />
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Fuente -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+  <!-- Preload/imagenes -->
+  <link rel="preload" as="image" href="img/fondo.png">
+  <link rel="preload" as="image" href="img/logooo.png">
+
+  <!-- Estilos propios -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body id="inicio">
+
+  <!-- NAV -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-transparent border-bottom border-light-subtle sticky-top backdrop-blur">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2 fw-bold" href="#inicio">
+        <img src="img/logooo.png" alt="Logo JoserWeb" class="rounded-circle shadow-sm" width="38" height="38">
+        <span>JoserWeb</span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav"
+              aria-controls="nav" aria-expanded="false" aria-label="Abrir menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+          <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link" href="#planes">Planes</a></li>
+          <li class="nav-item"><a class="nav-link" href="#faq">Preguntas</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+          <li class="nav-item ms-lg-2">
+            <a class="btn btn-brand fw-bold px-4" href="https://wa.me/50237210742?text=Hola%20JoserWeb,%20quiero%20mi%20p%C3%A1gina" target="_blank" rel="noopener">Empezar</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="py-5 py-lg-6">
+    <div class="container">
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-6">
+          <p class="text-brand fw-bold small ls-wide mb-2">AGENCIA WEB EN GUATEMALA</p>
+          <h1 class="display-5 fw-extrabold lh-tight mb-3">
+            Diseñamos <span class="brand-underline">páginas web</span> que venden por ti
+          </h1>
+          <p class="lead mb-4">
+            Sitios rápidos, modernos y listos para aparecer en Google. Tiendas en línea, catálogos y landing pages enfocadas a conversión.
+          </p>
+          <div class="d-flex flex-wrap gap-2 mb-3">
+            <a class="btn btn-brand fw-bold" href="#planes">Ver planes</a>
+            <a class="btn btn-outline-light fw-bold" href="https://wa.me/50237210742?text=Hola%20JoserWeb,%20quiero%20hablar%20de%20mi%20web" target="_blank" rel="noopener">WhatsApp</a>
+          </div>
+          <div class="d-flex flex-wrap gap-2">
+            <span class="chip">Rápidas</span>
+            <span class="chip">Responsivas</span>
+            <span class="chip">SEO Ready</span>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="hero-illustration p-2 p-md-3 rounded-4 shadow-lg">
+            <!-- usa tu imagen local; si falla, carga una de respaldo -->
+            <img src="img/portada2.png|" alt="Mockup de sitios JoserWeb" class="img-fluid rounded-4"
+                 onerror="this.onerror=null;this.src='img/portada2.png';">
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- SERVICIOS -->
+  <section id="servicios" class="py-5">
+    <div class="container text-center">
+      <h2 class="fw-extrabold mb-4">Lo que hacemos</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card glass h-100 p-4 text-center">
+            <div class="icon-round mx-auto mb-3">
+              <i class="bi bi-briefcase fs-3"></i>
+            </div>
+            <h3 class="h5 fw-bold">Sitios Corporativos</h3>
+            <p class="mb-0">Impulsa tu marca con una web profesional y confiable.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card glass h-100 p-4 text-center">
+            <div class="icon-round mx-auto mb-3">
+              <i class="bi bi-cart-check fs-3"></i>
+            </div>
+            <h3 class="h5 fw-bold">Tiendas en Línea</h3>
+            <p class="mb-0">Catálogo, carrito y pagos listos para vender 24/7.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card glass h-100 p-4 text-center">
+            <div class="icon-round mx-auto mb-3">
+              <i class="bi bi-rocket-takeoff fs-3"></i>
+            </div>
+            <h3 class="h5 fw-bold">Landing Pages</h3>
+            <p class="mb-0">Páginas enfocadas en conversión con llamadas a la acción.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PLANES -->
+  <section id="planes" class="py-5">
+    <div class="container text-center">
+      <h2 class="fw-extrabold mb-4">Planes y precios</h2>
+      <div class="row g-4">
+        <!-- Básico -->
+        <div class="col-md-4">
+          <div class="card glass h-100 p-4">
+            <h3 class="h5 fw-bold">Plan Básico</h3>
+            <p class="text-muted">Ideal para negocios pequeños que inician su presencia online.</p>
+            <div class="display-price"><span>Q1,200</span></div>
+            <ul class="list-unstyled text-start mx-auto my-3 small">
+              <li>✔ Sitio web de 3 páginas</li>
+              <li>✔ Responsive (móvil y PC)</li>
+              <li>✔ Optimización SEO básica</li>
+            </ul>
+            <a class="btn btn-brand w-100 fw-bold" href="#contacto">Elegir</a>
+          </div>
+        </div>
+        <!-- Empresarial -->
+        <div class="col-md-4">
+          <div class="card glass h-100 p-4 border border-2 border-success-subtle featured">
+            <div class="badge-popular">Más popular</div>
+            <h3 class="h5 fw-bold">Plan Empresarial</h3>
+            <p class="text-muted">Perfecto para empresas que buscan crecer en internet.</p>
+            <div class="display-price"><span>Q2,500</span></div>
+            <ul class="list-unstyled text-start mx-auto my-3 small">
+              <li>✔ Hasta 7 páginas</li>
+              <li>✔ Tienda en línea con carrito</li>
+              <li>✔ Optimización SEO avanzada</li>
+              <li>✔ 1 mes de soporte gratuito</li>
+            </ul>
+            <a class="btn btn-brand w-100 fw-bold" href="#contacto">Elegir</a>
+          </div>
+        </div>
+        <!-- Premium -->
+        <div class="col-md-4">
+          <div class="card glass h-100 p-4">
+            <h3 class="h5 fw-bold">Plan Premium</h3>
+            <p class="text-muted">Máxima personalización y escalabilidad.</p>
+            <div class="display-price"><span>Q4,500</span></div>
+            <ul class="list-unstyled text-start mx-auto my-3 small">
+              <li>✔ Páginas ilimitadas</li>
+              <li>✔ Tienda online avanzada</li>
+              <li>✔ Integración pagos + WhatsApp</li>
+              <li>✔ 3 meses de soporte</li>
+            </ul>
+            <a class="btn btn-brand w-100 fw-bold" href="#contacto">Elegir</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="py-5">
+    <div class="container">
+      <h2 class="fw-extrabold mb-4 text-center">Preguntas frecuentes</h2>
+      <div class="row g-3">
+        <div class="col-md-4">
+          <details class="glass p-3 rounded-4">
+            <summary class="fw-bold">¿En cuánto tiempo entregan mi página?</summary>
+            <p class="text-muted mb-0 mt-2">Entre 7 y 15 días, según plan y contenidos.</p>
+          </details>
+        </div>
+        <div class="col-md-4">
+          <details class="glass p-3 rounded-4">
+            <summary class="fw-bold">¿Incluye dominio y hosting?</summary>
+            <p class="text-muted mb-0 mt-2">Podemos gestionarlos por ti con costo adicional, o usar los que ya tengas.</p>
+          </details>
+        </div>
+        <div class="col-md-4">
+          <details class="glass p-3 rounded-4">
+            <summary class="fw-bold">¿Optimizarán mi web para Google?</summary>
+            <p class="text-muted mb-0 mt-2">Sí, entregamos SEO técnico inicial y guía de contenidos.</p>
+          </details>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="contacto" class="py-5">
+    <div class="container">
+      <div class="glass p-4 p-md-5 rounded-4 text-center">
+        <h2 class="fw-extrabold">¿Listo para empezar?</h2>
+        <p class="text-muted mb-3">Cuéntanos sobre tu negocio y en 24 horas te enviamos una propuesta.</p>
+        <div class="d-flex gap-2 justify-content-center flex-wrap">
+          <a class="btn btn-brand fw-bold" href="https://wa.me/50237210742?text=Hola%20JoserWeb,%20quiero%20una%20propuesta" target="_blank" rel="noopener">Escribir por WhatsApp</a>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-4 border-top border-light-subtle">
+    <div class="container d-flex flex-wrap justify-content-between align-items-center gap-3">
+      <div>© <span id="y"></span> JoserWeb. Todos los derechos reservados.</div>
+      <div class="d-flex gap-3">
+        <a href="https://www.facebook.com/share/1CVxHqki7S/?mibextid=wwXIfr" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://www.instagram.com/joserweb__?igsh=MmZqYTRseXgxcHJv&utm_source=qr" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp flotante -->
+<!-- Botón flotante de WhatsApp -->
+<a href="https://wa.me/50212345678" class="whatsapp-float" target="_blank">
+  <img src="img/WhatsApp_icon.png" alt="WhatsApp">
+</a>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
