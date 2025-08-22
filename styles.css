@@ -96,6 +96,13 @@ body {
   color:#03120d; font-weight:800;
   padding:6px 10px; border-radius:999px; font-size:.8rem;
 }
+.nota-precios {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #aaa;
+  margin-top: 20px;
+  font-style: italic;
+}
 
 /* Botones */
 .btn-brand{
